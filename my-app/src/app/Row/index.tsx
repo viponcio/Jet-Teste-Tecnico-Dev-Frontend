@@ -25,7 +25,7 @@ export default function Row() {
 					</td>
 					<td className="flex row px-8 py-4  sm:shrink-0">
 						{Array.from({ length: 5 }).map((_, index) => {
-							return <FontAwesomeIcon icon={faStar} className="h-4" />;
+							return <FontAwesomeIcon key={index} icon={faStar} className="h-4" />;
 						})}
 					</td>
 					<td className=" px-8 py-4">
